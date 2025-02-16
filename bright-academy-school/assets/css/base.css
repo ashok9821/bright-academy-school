@@ -1,0 +1,511 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*@font-face {
+	font-family: 'Samarkan';
+	src: url('../fonts/Samarkan.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+/* ============== Default Element Style ================ */
+body {
+    font-family: "Poppins", serif;
+    font-size: clamp(15px, 2vw, 18px); /* Minimum 14px, Maximum 18px, scales with viewport */
+
+    color: #656565;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: "Fredoka", serif;
+    font-size: clamp(36px, 4vw, 60px); /* Minimum 40px, Maximum 70px, scales with viewport */
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size: clamp(28px, 4vw, 40px); /* Minimum 30px, Maximum 40px, scales with viewport */
+    font-weight: 600;
+    line-height: 1.1em;
+    font-family: "Fredoka", serif;
+    color: #423F8D;
+}
+
+    h2 span {
+        color: #ED078B;
+    }
+
+h3 {
+    font-size: clamp(20px, 4vw, 25px); /* Minimum 25px, Maximum 30px, scales with viewport */
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #423F8D;
+}
+
+h4 {
+    font-size: clamp(20px, 3vw, 26px); /* Minimum 20px, Maximum 26px, scales with viewport */
+    line-height: 1.2em;
+    font-family: "Fredoka", serif;
+}
+
+h5 {
+    font-size: clamp(18px, 2.5vw, 22px); /* Minimum 18px, Maximum 22px, scales with viewport */
+    line-height: 1.2em;
+    font-family: "Fredoka", serif;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: clamp(16px, 2vw, 20px); /* Minimum 16px, Maximum 18px, scales with viewport */
+    line-height: 1.4em;
+    font-family: "Concert One", serif !important;
+}
+
+.font-samarkan {
+    font-family: 'MyCustomFont', sans-serif;
+}
+/*----font-size:16px----*/
+p, a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(15px, 2vw, 18px) !important; /* Minimum 14px, Maximum 18px, scales with viewport */
+    color: #3E3E3E;
+    font-family: "DM Sans", serif;
+}
+
+.content {
+    color: #423F8D;
+}
+
+.content-black {
+    color: #5E5E5E;
+}
+
+a:hover {
+    color: #ED078B;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul, li {
+    font-family: "Archivo", serif;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none !important;
+}
+
+img {
+    border-style: none;
+}
+
+.text-brown {
+    color: #B18E4A;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .header-area .header-top {
+        padding: 8px 50px;
+    }
+}
+
+.header-area .header-top {
+    background: #ED078B;
+    /*  padding: 8px 210px;*/
+}
+
+    .header-area .header-top .header-info-right .header-social li {
+        display: inline-block;
+    }
+
+        .header-area .header-top .header-info-right .header-social li a {
+            color: #fff;
+            font-size: 16px;
+            padding-left: 19px;
+        }
+
+a, button {
+    color: #fff;
+    outline: medium none;
+}
+
+.header-area .header-top .header-info-left ul li {
+    color: #fff;
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 13px 43px !important;
+    text-transform: capitalize !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    background: #12D9DF;
+    border-radius: 30px;
+}
+
+.nav-link {
+    padding: 12px 30px !important;
+    font-family: "Concert One", serif !important;
+    color: #423F8D;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+    .nav-link:hover, #footer ul li a:hover {
+        color: #ED078B;
+    }
+
+@media(max-width:1200px) {
+    .nav-link {
+        padding: 12px 21px !important;
+    }
+}
+
+
+
+.tittle-1 {
+    color: #1F97D4;
+    font-family: "Concert One", serif !important;
+}
+
+.tittle-2 {
+    color: #FBCE0F;
+    font-family: "Concert One", serif !important;
+}
+
+.tittle-3 {
+    color: #12D9DF;
+    font-family: "Concert One", serif !important;
+}
+
+#class-we-offer, #gallery-section {
+    background: url(../../assets/img/class-bg-img.webp);
+    background-size: cover;
+    background-position: top center;
+}
+
+.class-box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.age {
+    color: #ED078B;
+}
+
+.classes {
+    color: #FBCE0F;
+}
+
+.price {
+    color: #1F97D4;
+}
+
+#footer {
+    background-color: #4255A4;
+}
+
+    #footer ul li a {
+        line-height: 40px;
+    }
+
+@media(max-width:992px) {
+    #footer ul li a {
+        line-height: 30px;
+    }
+}
+
+#drawing-events {
+    background: url(../../assets/img/events-date-bg.webp);
+    background-size: cover;
+    background-position: top center;
+}
+
+.drawing-box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.btn-2 {
+    background: #ED078B;
+    font-family: "Concert One", cursive;
+    text-transform: capitalize;
+    padding: 12px 38px !important;
+    color: #fff !important;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(237, 7, 139, 0.4);
+}
+    /* Glowing effect on hover */
+    .btn-2:hover {
+        color: #fff !important;
+        box-shadow: 0 0 15px rgba(237, 7, 139, 0.7), 0 0 40px rgba(237, 7, 139, 0.5);
+        transform: scale(1.05);
+    }
+
+    /* Bounce effect */
+    .btn-2:hover {
+        animation: bounce 0.4s ease-in-out;
+    }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Ripple effect */
+.btn-2::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease-out;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.btn-2:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+
+
+.countdown {
+    width: min(100% - 2rem, 48rem);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    color: #0a3d4c;
+    font-size: clamp(2rem, 4.5vw - 0.5rem, 3rem);
+}
+
+    .countdown > div:last-child {
+        grid-column-end: 4;
+    }
+
+@media (min-width: 500px) {
+    .countdown {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+        .countdown > div:last-child {
+            grid-column-end: auto;
+        }
+}
+
+.countdown > div {
+    grid-column: span 2;
+    background-color: #fffae7;
+    color: #423F8D;
+    padding: 0px 16px 28px;
+    border-radius: 0.5rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+    .countdown > div > span {
+        display: grid;
+        place-content: center;
+        font-weight: bold;
+        transition: translate 150ms ease, scale 150ms ease;
+    }
+
+    .countdown > div::after {
+        content: attr(data-desc);
+        font-size: 0.8rem;
+        position: absolute;
+        text-transform: capitalize;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @starting-style {
+            scale: 0;
+            opacity: 0;
+            translate: 0 100px;
+        }
+
+        transition: 300ms ease-in-out var(--d);
+    }
+
+.blue {
+    color: #423f8d;
+}
+
+@media(max-width:992px) {
+    .countdown > div {
+        grid-column: span 2;
+        background-color: #fffae7;
+        color: #423F8D;
+        padding: 0px 24px 28px;
+        border-radius: 0.5rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+        transition: all 0.2s;
+    }
+}
+/*@media(max-width:576px) {
+    .countdown > div {
+        grid-column: span 2;
+        background-color: #fffae7;
+        color: #423F8D;
+        padding: 0px 45px 28px;
+        border-radius: 0.5rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+        transition: all 0.2s;
+    }
+}*/
+
+#header {
+    position: relative;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1050;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.hero-title {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 74px 80px;
+    width: fit-content;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media(max-width:992px) {
+    .hero-title {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 30px;
+        padding: 23px 48px 23px 48px;
+        width: fit-content;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media(max-width:576px) {
+    .hero-title {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 30px;
+        padding: 5px 25px 9px 25px;
+        margin: auto;
+        width: fit-content;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+/*.hero-section{
+    position:absolute;
+    top:100px;
+    left:100px;
+
+}*/
+
+#inner-banner {
+    background: url(../../assets/img/contact-us-banner-img.webp);
+    background: url(../../assets/img/contact-us-banner-img.png);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 0px;
+}
+
+.sticky #inner-banner {
+    background: url(../../assets/img/contact-us-banner-img.webp);
+    background: url(../../assets/img/contact-us-banner-img.png);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 100px;
+}
+
+.content-down {
+    padding: 85px 0 85px 0;
+}
+
+.map-box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+#school-baner {
+    background: url(../../assets/img/school-baner-img.webp);
+    background: url(../../assets/img/school-baner-img.png);
+    background-size: cover;
+    background-position: right center;
+}
+
+.navbar-brand img {
+    width: 230px;
+}
+
+@media(max-width:576px) {
+    .navbar-brand img {
+        width: 200px;
+    }
+}
+
+#gallery-section img {
+    cursor: zoom-in !important;
+}
+
+
+/*.nav-link.active {
+    color: #ED078B !important;
+    font-weight: 700 !important;
+}*/
+
+.navbar-nav .nav-link.active, .footer .nav-link.active {
+    background-image: linear-gradient(to right, #ffae00, #00ff00) !important;
+    font-weight: 500;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+}

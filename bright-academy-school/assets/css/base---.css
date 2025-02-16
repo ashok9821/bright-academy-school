@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*@font-face {
+	font-family: 'Samarkan';
+	src: url('../fonts/Samarkan.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+/* ============== Default Element Style ================ */
+body {
+    font-family: "Poppins", serif;
+    font-size: clamp(15px, 2vw, 18px); /* Minimum 14px, Maximum 18px, scales with viewport */
+
+    color: #656565;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: "Archivo", serif;
+    font-size: clamp(36px, 4vw, 48px); /* Minimum 40px, Maximum 70px, scales with viewport */
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size: clamp(28px, 4vw, 36px); /* Minimum 30px, Maximum 40px, scales with viewport */
+    font-weight: 600;
+    line-height: 1.1em;
+    font-family: "Archivo", serif;
+}
+
+h3 {
+    font-size: clamp(24px, 4vw, 30px); /* Minimum 25px, Maximum 30px, scales with viewport */
+    line-height: 1.2em;
+    font-weight: 600;
+    font-family: "Archivo", serif;
+}
+
+h4 {
+    font-size: clamp(20px, 3vw, 26px); /* Minimum 20px, Maximum 26px, scales with viewport */
+    line-height: 1.2em;
+    font-family: "Archivo", serif;
+}
+
+h5 {
+    font-size: clamp(18px, 2.5vw, 24px); /* Minimum 18px, Maximum 24px, scales with viewport */
+    line-height: 1.2em;
+    color: #181828;
+    font-family: "Archivo", serif;
+}
+
+h6 {
+    font-size: clamp(16px, 2vw, 20px); /* Minimum 16px, Maximum 18px, scales with viewport */
+    line-height: 1.4em;
+    font-family: "Archivo", serif;
+}
+
+.font-samarkan {
+    font-family: 'MyCustomFont', sans-serif;
+}
+/*----font-size:16px----*/
+p, a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(15px, 2vw, 17px); /* Minimum 14px, Maximum 18px, scales with viewport */
+    color: #3E3E3E;
+    font-family: "Open Sans", serif;
+}
+
+    a:hover {
+        color: #B18E4A;
+    }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul, li {
+    font-family: "Archivo", serif;
+}
+a, a:hover, a:focus {
+    text-decoration: none !important;
+}
+
+img {
+    border-style: none;
+}
+
+.text-brown {
+    color: #B18E4A;
+}
+.btn-graident {
+    background: linear-gradient(to right, #00A3D4, #95D024) !important;
+}
+    .btn-graident:hover {
+        background: linear-gradient(to left, #00A3D4, #95D024) !important;
+    }
+
+.btn-theme {
+    color: #fff;
+    padding: 15px 30px;
+    background: #CD0001;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    outline:2px solid #fff;
+    outline-offset: -5px;
+}
+
+    .btn-theme:hover {
+        background: #3E3E3E; /* Darker background on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        color: #fff;
+    }
+
+.btn-green {
+    background: #95D024;
+}
+.clr-black {
+    color: #252525;
+}
+.bg-red {
+    background: #CD0001;
+}
+.clr-content {
+    color: #656565;
+}
+.cnt-black{
+    color: #3E3E3E;
+}
+.red {
+    color: #CD0001;
+}
+.nav-link:focus, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #656565 !important;
+}
+
+.padding-100 {
+    padding: 80px 0px;
+}
+
+.padding-top {
+    padding-top: 80px;
+}
+
+.padding-bottom {
+    padding-bottom: 80px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0px 40px;
+    font-family: "Montserrat", serif;
+    font-weight:500;
+}
+
+.navbar a:hover, a.active {
+    color: #B18E4A;
+}
+
+.top_header {
+    background-color: #EEEBE6;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: #000000a3 !important;
+    border: 1px solid;
+}
+
+
+
+@media (min-width:992px) {
+    .offcanvas-body a {
+        color: #656565;
+    }
+
+    /*.navbar {
+        background-color: #F5F5F5 !important;
+    }*/
+
+        .navbar.fixed {
+            position: fixed;
+            background-color: #F5F5F5 !important; /* Black background on scroll */
+            color: #656565;
+            box-shadow: 0 4px 6px rgb(255 255 255 / 10%); /* Optional shadow */
+            width: 100%;
+            top: 0;
+            z-index: 111;
+        }
+}
+
+@media (max-width:992px) {
+
+    #header {
+        position: relative !important;
+        z-index: unset !important;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 11;
+    }
+
+    .m_auto {
+        margin: auto;
+    }
+
+    #hero-section {
+        padding: 200px 0 100px 0;
+    }
+}
+
+#footer {
+    background: url(../../assets/img/bankers-footer-img.webp);
+    background: url(../../assets/img/bankers-footer-img.png);
+    background-size: cover;
+    background-position: center center;
+}
+    #footer ul li a, #footer h4, #footer p, #footer a {
+        color: #fff;
+    }
+
+#inner-banner {
+    background: url(../../assets/img/inner-page-banner-img.webp);
+    background: url(../../assets/img/inner-page-banner-img.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.content-down {
+    padding: 100px 0 100px 0;
+}
+
+.press-box {
+    border: 2px solid #CD0001;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.box-shadow-date {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #CD0001;
+    border-radius: 8px;
+}
+
+.clamped-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+
+#events-bankers .nav-tabs {
+    border-bottom: unset;
+}
+
+#events-bankers .nav-link.active {
+    background: #CD0001;
+    color: #fff !important;
+    border-radius: 0px;
+}
+
+#events-bankers .nav-tabs .nav-link {
+    border: unset;
+    padding: 15px 36px;
+    font-size: 18px;
+    color: #252525;
+}
+
+.carousal-arrow a {
+    border: 1px solid #CD0001;
+    padding: 8px 12px;
+    color: #CD0001;
+    font-size: 20px;
+}
+    .carousal-arrow .active {
+        color: #fff !important;
+        background: #CD0001 !important;
+    }
+.date-fix{
+    background: #CD0001;
+    color:#fff;
+    width:fit-content;
+    position:absolute;
+    bottom:-25px;
+    right:30px;
+    border-radius:7px;
+}
+
+.pdf-img {
+    height: 250px;
+    object-fit: contain;
+}
+.shadow-1 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:10px;
+}
+
+#commitment-quality ul li {
+    
+    font-size: 18px !important;
+    color: #3E3E3E !important;
+    font-weight: bold;
+    font-family: "Archivo", serif;
+}
+
+@media(min-width:992px){
+    #commitment-quality ul {
+        list-style: disc !important;
+    }
+}
+
+.icon-size {
+    background: #fff;
+    color: #CD0001;
+    width:fit-content;
+   height:50px;
+   width:50px;
+    border-radius:13px;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+ 
+}
+.icon-size i{
+    font-size:30px;
+}
+
+.doctors-shaow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    border: 1px solid #CD0001;
+}
+#hospital-details .blog-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hospital-details .inner-img {
+    float: right;
+    width: 42%;
+    min-width: 300px;
+    margin-left: 30px;
+}
+
+@media (max-width: 992px) {
+    #hospital-details .inner-img {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.facilities-img-size {
+    height: 280px;
+    width: 430px;
+    object-fit: cover;
+}
+
+#facilities-hospital .owl-nav {
+    position: relative;
+    bottom: 25rem;
+}
+
+#facilities-hospital .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: 0px;
+}
+
+#facilities-hospital .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    right: 40px;
+}
+
+#facilities-hospital .owl-theme .owl-nav [class*=owl-]:hover {
+    background: unset;
+}
+
+#facilities-hospital .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #CD0001;
+}
+
+#hospital-services .form-select {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #CD0001;
+}
+
+.form-select {
+    background-image: url(../../assets/img/dropdown-img-icon.svg) !important;
+}
+#hospital-services .contact-details {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
+}
+#hospital-services .bg-red {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#other-hospital .press-box {
+    border: 10px solid #CD0001;
+}
